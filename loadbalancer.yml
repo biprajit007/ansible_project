@@ -1,0 +1,26 @@
+---
+- name: Configure Nginx Load Balancer
+  hosts: loadbalancer
+  become: true
+
+  vars:
+    nginx_conf_path: /etc/nginx/conf.d/loadbalancer.conf
+
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Generate Nginx load balancer config from template
+      template:
+        src: templates/nginx_lb.conf.j2
+        dest: "{{ nginx_conf_path }}"
+        mode: '0644'
+
+    - name: Ensure Nginx service is enabled and started
+      service:
+        name: nginx
+        state: restarted
+        enabled: yes
