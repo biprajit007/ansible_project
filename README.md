@@ -80,23 +80,7 @@ http://<loadbalancer-ip-address>/
 
 You should see the load balancing in action across your backend servers.
 
----
 
-## 🤝 Contributing
-
-Feel free to contribute! Fork the repository, create a branch, make your changes, and submit a pull request.
-
----
-
-## 📜 License
-
-This repository is released under the **MIT License**.
-
----
-
-## 📞 Contact Information
-
-For support, questions, or suggestions, contact me at:
 
 - **Email:** your.email@example.com  
 - **GitHub:** [github.com/your-username](https://github.com/your-username)
