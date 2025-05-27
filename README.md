@@ -80,11 +80,3 @@ http://<loadbalancer-ip-address>/
 
 You should see the load balancing in action across your backend servers.
 
-
-
-- **Email:** your.email@example.com  
-- **GitHub:** [github.com/your-username](https://github.com/your-username)
-
----
-
-*Please replace placeholder text (`your.email@example.com`, `your-username`) with your actual contact information before uploading to GitHub.*
